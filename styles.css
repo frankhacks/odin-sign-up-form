@@ -355,13 +355,16 @@
 
 body {
     font-family: pageFont;
-    display:inline-flex;
+    display:flex;
+    flex-flow: row wrap;
+    background-color: blanchedalmond;
+    color: rgb(164, 101, 37);
 }
 
 #hero {
     width: 40vw;
     height: 100vh;
-    background-image: url("login.jpg");
+    background-image: url("vlad-tchompalov-dQkXoqQLn40-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -371,5 +374,75 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    width: 60vw;
+    width: 55vw;
+    padding-left: 20px;
+}
+
+#logo {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    text-align: center;
+    background-color: blanchedalmond;
+    opacity: 40%;
+    color:rgb(150, 133, 63);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+#brain {
+    opacity: 100%;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+}
+
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+    padding: 4px;
+    margin: 4px;
+}
+
+
+button {
+    border: none;
+    padding: 4px;
+    margin: 4px;
+    width: clamp(100px, 200px, 300px);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: clamp(0.55em, 1.1em, 2em);
+    position: relative;
+    top: .2em;
+}
+
+@media screen and (max-width: 950px){
+    #hero{
+        width: 100vw;
+    }
+    #login{
+        width: 90vw;
+    }
+    form {
+    display: grid;
+    gap: 3px;
+}
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+}
 }

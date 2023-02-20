@@ -10,33 +10,60 @@
 </head>
 
 <body>
-    <div id="hero">Daily Motivation</div>
+    <div id="hero">
+        <div id="logo">
+            <h2>
+                <div id="brain"><img src="brain-3-svgrepo-com.svg" alt="Brain Logo"> Motivi
+                </div>
+            </h2>
+        </div>
+    </div>
     <div id="login" class="login">
         <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus,
             commodi!</p>
         <p>Sign up now to get started.</p>
-        <p>know you want to.</p>
+        <p>You know you want to.</p>
         <form action="post">
-            <label for="user">Username*</label>
-            <input type="text" name="user" id="user" required />
+            <div class="input">
+                <label for="user">Username*</label>
+                <input type="text" name="user" id="user" required />
+            </div>
+            <div class="input">           
             <label for="first">First Name*</label>
             <input type="text" name="first" id="first" required />
+            </div>
+            <div class="input">  
             <label for="last">Last Name*</label>
             <input type="text" name="last" id="last" required />
+            </div>
+            <div class="input">  
             <label for="email">Email*</label>
             <input type="email" name="email" id="email" required />
+            </div>
+            <div class="input">  
             <label for="email2">Second Email</label>
             <input type="email" name="email2" id="email2" />
+            </div>
+            <div class="input">  
             <label for="phone">Phone Number*</label>
             <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="input">  
             <label for="password">Password*</label>
             <input type="password" name="password" id="password" required />
+            </div>
+            <div class="input">  
             <label for="confirm">Confirm Password*</label>
             <input type="password" name="confirm" id="confirm" required />
-            <button type="submit">Create Account</button>
+            </div>
+            <div class="input">  
             <button type="reset">Reset</button>
+            </div>
+            <div class="input">  
+            <button type="submit">Create Account</button>
+            </div>
         </form>
-        <div>Already have an account? <a href="">Log in</a></div>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 
